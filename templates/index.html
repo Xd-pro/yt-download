@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Downloader</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            background-color: rgb(167, 255, 236)
+        }
+        
+        .center_me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .my_box {
+            background-color: white;
+            border-radius: 5px;
+            width: 80vw;
+            height: 80vh;
+        }
+        
+        .page {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .fat {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="center_me">
+            <div class="my_box">
+                <div class="center_me">
+                    <div class="page_container">
+                        <h1>Youtube Downloader</h1>
+                        <div class="input-field inline animated fat">
+                            <input id=url type=text>
+                            <label for=url>Video link</label>
+                        </div>
+                        <div class="switch inline">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" id="audio"/>
+                                <span>Audio instead of video?</span>
+                              </label>
+                        </div>
+                        <br>
+                        <button class=btn onclick="startDownload()">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
